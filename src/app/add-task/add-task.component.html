@@ -1,0 +1,42 @@
+<div class="container-fluid bg-grey">
+    <div class="container">
+        <h2 class="text-center">add a new task</h2>
+        <div class="row">
+          <div class="col-sm-5">
+          </div>
+          <div class="col-sm-7 slideanim">
+            <div class="row">
+              <div class="col-sm-4 form-group">
+                  <label for="id==name">task name</label>
+                <input [(ngModel)] ="new_task.name" (mouseleave)="checkNameInput()" class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-4 form-group">
+                    <label for="id==name">task date</label>
+                  <input [(ngModel)] ="new_task.date"(mouseleave)="checkDateInput()" class="form-control" id="name" name="name" placeholder="Name" type="date" required>
+                </div>
+            <div class="col-sm-4 form-group">
+                        <label for="id==name">task time</label>
+                      <input [(ngModel)]  ="new_task.time"class="form-control" id="name" name="name" placeholder="Name" type="time" required>
+                    </div>
+                  
+            </div>
+            <label class="infolabel">task info</label>
+            <textarea [(ngModel)]  ="new_task.info" class="form-control taskinfo" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            
+            
+            <div class="row" *ngIf="(isallInputValid.nameinput) && (isallInputValid.dateinput)" >
+              <div class="col-sm-12 form-group">
+                  <a routerLink="/to_do_list">
+                        <button class="btn btn-default pull-right" (click)="submit()" type="submit">submit task</button>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+      
+
+
+

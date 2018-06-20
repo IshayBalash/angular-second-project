@@ -1,0 +1,54 @@
+
+.rapper{
+    min-height:555px;
+    max-height:10000000000px;
+    position: relative;
+    width: 100%;
+    top:100px;
+    padding-bottom:20%;
+    background-color:#6699ff; 
+}
+
+
+
+.row{
+    position: relative;
+    top:80px;
+    left:50px;
+}
+/*
+
+
+.container{
+    height: 555px;
+    width: 100%;
+    padding: 0%
+}
+
+*/
+
+.thumbnail .caption{
+    padding: 8px !important;
+    height:270px;
+    background-color: #ffccff;
+}
+.thumbnail{
+    margin-bottom :0px;
+}
+.book-container{
+    height: 300px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 8px !important;
+    margin: 15px;
+}
+
+h1{
+    color: black;
+}
+
+.noTasks{
+    position: absolute;
+    bottom:300px;
+    left:240px;
+}

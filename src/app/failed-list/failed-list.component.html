@@ -1,0 +1,39 @@
+<h1 class="headline">Acomplish tasks</h1>
+
+
+<div class="container rapper">
+        <table class="table row table-striped">
+                <thead>
+                  <tr>
+                    <th>task name</th>
+                    <th>acomplish date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of  faildTask" >
+                    <td>{{i.name}}</td>
+                    <td>{{i.date}}</td>
+                    <td class="show_info">
+                        <button class="btn btn-default" (click)="showInfo(i)">show info</button>
+                    </td>
+                    <td class="calc_time">
+                        <button class="btn btn-default" (click)="time_that_passed(i)">calc time</button>
+                </td>
+                    <td class="delet">
+                            <button class="btn btn-default" (click)="delet_task(i)">delet task</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+

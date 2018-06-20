@@ -1,0 +1,41 @@
+
+    <div class="body">
+    <div class="header"></div>
+    <app-header></app-header>
+    <app-main></app-main> 
+    <div class="footer">
+    <app-footer></app-footer>
+    </div>
+</div>
+
+
+<!--
+the header componenet and the footer will always stay on the page, the main componnet
+only cointaim the router link for the rest of the components.
+ -->
+
+
+
+
+
+
+
+
+
+<!-- 
+<div *ngIf='infoFromLocalStorge.Username !="first time user"'>
+    <h1>hy {{infoFromLocalStorge.Username}}</h1>
+</div>
+
+
+
+
+
+
+<div *ngIf='infoFromLocalStorge.Username=="first time user"'>
+    <h2>it is your first time here please enter tour name</h2>
+    <input type="text" [(ngModel)]="user_name_first_time">
+    <button (click)="send_user_name_to_storage()">submit</button>
+</div>
+
+-->

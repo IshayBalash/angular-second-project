@@ -1,0 +1,29 @@
+
+<div class="container rapper">
+<div class="container" *ngIf="todoTask.length">
+  <div class="row">
+      <div class="col-md-3 book-container" *ngFor="let task of  todoTask">
+          <div class="thumbnail">
+              <div class="caption">
+                  <h2>{{task.name}}</h2>
+                  <hr/>
+                  <p>date:{{task.date}}</p>
+                  <p>time:{{task.time}}</p>
+                  <p>
+                      <button class="btn btn-primary" (click)="showInfo(task)">show info</button>
+                  </p>
+                  <p>
+                    <button class="btn btn-default" (click)="acomplish_task(task)">finish task</button>
+                    <button class="btn btn-default" (click)="delet_task(task)" >delet task</button>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div *ngIf="!todoTask.length" class="noTasks">
+  <h1>you currently dont have any task in your TODO list</h1>
+</div>
+</div>

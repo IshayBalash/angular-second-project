@@ -1,0 +1,23 @@
+<h1 class="headline">Acomplish tasks</h1>
+
+
+<div class="container rapper">
+        <table class="table row table-striped">
+                <thead>
+                  <tr>
+                    <th>task name</th>
+                    <th>acomplish date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of ecomplishTask" >
+                    <td>{{i.name}}</td>
+                    <td>{{i.acomplishDate}}</td>
+                    <td class="delet">
+                            <button class="btn btn-default" (click)="delet_task(i)">delet task</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+
+</div>

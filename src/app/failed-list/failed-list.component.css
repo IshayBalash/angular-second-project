@@ -1,0 +1,47 @@
+.rapper{
+    min-height:555px;
+    max-height:10000000000px;
+    position: relative;
+    width: 100%;
+    top:100px;
+    padding-bottom:20%;
+    background-color:#6699ff; 
+}
+
+
+.row{
+    position: relative;
+    top:10px;
+    left:370px;
+}
+
+table{
+    width: 600px;
+    border-color:black;
+    color: black;
+    text-align: center;
+}
+
+td{
+   max-width: 200px 
+}
+
+.delet{
+    width: 100px;
+    background-color:#f44256
+}
+.calc_time{
+    width: 100px;
+    background-color: #36c169
+}
+.show_info{
+    width: 100px;
+    background-color: #344f63
+}
+
+
+.headline{
+    position: relative;
+    top:10px;
+    left:530px;
+}

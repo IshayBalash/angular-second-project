@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="bottons">
+    <div class="navbar-header">
+      <a class="navbar-brand"> welcome {{userinfo.Username}}</a>
+    </div>
+    <ul class="nav navbar-nav" *ngIf='!userinfo.Username=="" '>
+      <li class="dropdown">
+        <button class="dropdown-toggle btn-danger " data-toggle="dropdown"  href="#">manu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a  routerLink="/home">home</a></li>
+          <li><a  routerLink="/add_task">add task</a></li>
+          <li><a routerLink="/to_do_list">to do list</a></li>
+          <li><a routerLink="/acomplish_list">acomplih tasks</a></li>
+          <li><a routerLink="failed_list" >faild tasks</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  </div>
+<button class="logout btn btn-danger" *ngIf='!userinfo.Username=="" '(click)="log_out()">
+  <a routerLink="log in">log out</a>
+</button>
+</nav>
+
+
+
+
+
+
+

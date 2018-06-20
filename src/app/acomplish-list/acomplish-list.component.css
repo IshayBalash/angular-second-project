@@ -1,0 +1,39 @@
+.rapper{
+    min-height:555px;
+    max-height:10000000000px;
+    position: relative;
+    width: 100%;
+    top:100px;
+    padding-bottom:20%;
+    background-color:#6699ff; 
+}
+
+
+.row{
+    position: relative;
+    top:10px;
+    left:470px;
+}
+
+table{
+    width: 400px;
+    border-color:black;
+    color: black;
+    text-align: center;
+}
+
+td{
+   max-width: 100px 
+}
+
+.delet{
+    width: 100px;
+    background-color:#f44256
+}
+
+
+.headline{
+    position: relative;
+    top:10px;
+    left:530px;
+}

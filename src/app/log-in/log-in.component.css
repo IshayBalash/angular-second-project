@@ -1,0 +1,17 @@
+.jumbotron{
+    height: 495px;
+    background-color:#6699ff;
+
+}
+
+.form-control{
+    width: 500px;
+    position: absolute;
+    left: 30%;   
+}
+
+.btn{
+    width: 90px;
+    position: relative;
+    right:293px;
+}
