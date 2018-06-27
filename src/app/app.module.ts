@@ -18,6 +18,7 @@ import { AcomplishListComponent } from './acomplish-list/acomplish-list.componen
 import { FailedListComponent } from './failed-list/failed-list.component';
 
 
+
 const appRoutes:Routes=[
   {path:"log in", component: LogInComponent},
   {path:"home", component:HomeComponent},
@@ -27,7 +28,7 @@ const appRoutes:Routes=[
   {path:"failed_list",component:FailedListComponent},
 
   {path:"", redirectTo:"/log in",pathMatch:"full"},
-  {path:"**", component:LogInComponent }
+  {path:"**", component:LogInComponent },
 ];
 
 @NgModule({
@@ -52,6 +53,9 @@ const appRoutes:Routes=[
     
     FailedListComponent,
     
+   
+    
+        
   ],
   imports: [
     BrowserModule,
