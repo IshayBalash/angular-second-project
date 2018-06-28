@@ -47,7 +47,7 @@ info:any;
     //make sure there is no lost data
     this.send_data_to_storage();
     this.singelUser={Username:"",tasks:[]}
-    window.location.reload()//reload the page
+   
   }
   //////////////////////////////////////////////////////////////////////////////////////
 

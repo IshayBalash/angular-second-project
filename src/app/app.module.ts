@@ -20,14 +20,14 @@ import { FailedListComponent } from './failed-list/failed-list.component';
 
 
 const appRoutes:Routes=[
-  {path:"log in", component: LogInComponent},
+  {path:"log_in", component: LogInComponent},
   {path:"home", component:HomeComponent},
   {path:"add_task",component:AddTaskComponent},
   {path:"to_do_list",component:ToDoListComponent},
   {path:"acomplish_list",component:AcomplishListComponent},
   {path:"failed_list",component:FailedListComponent},
 
-  {path:"", redirectTo:"/log in",pathMatch:"full"},
+  {path:"", redirectTo:"/log_in",pathMatch:"full"},
   {path:"**", component:LogInComponent },
 ];
 

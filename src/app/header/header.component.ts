@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ControlService} from "../shared/services/controlService.service";
 import {UserInter} from "../shared/models/user_info.model"
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,6 +11,7 @@ import {UserInter} from "../shared/models/user_info.model"
 export class HeaderComponent implements OnInit {
 
   userinfo:UserInter;
+
 
   log_out():void{
     this.myControllService.log_out();
